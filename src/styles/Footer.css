@@ -1,0 +1,149 @@
+.footer {
+  background: linear-gradient(to right, #001f3f, #3b2f2f);
+  color: var(--white);
+  padding: 4rem 2rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* Logo & About */
+.footer-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s ease;
+}
+.footer-logo:hover {
+  transform: scale(1.08) rotate(-1deg);
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact p {
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}
+.footer-contact i {
+  margin-right: 10px;
+  color: var(--light-brown);
+}
+
+/* Links */
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-links a:hover {
+  color: var(--light-brown);
+  padding-left: 4px;
+}
+
+/* Contact Form */
+.footer-message h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.footer-message input,
+.footer-message textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  background: #f3f3f3;
+}
+.footer-message button {
+  background: var(--light-brown);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.footer-message button:hover {
+  background: var(--deep-brown);
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* Decorative Background Circle */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-message {
+    text-align: center;
+  }
+
+  .footer-message form {
+    max-width: 100%;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+}

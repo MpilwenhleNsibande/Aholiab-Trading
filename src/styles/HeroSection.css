@@ -1,0 +1,44 @@
+.hero-section {
+  background: url('/hero-placeholder.jpg') no-repeat center center/cover;
+  background-color: #001f3f; /* fallback color */
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 31, 63, 0.8); /* navy blue overlay */
+  padding: 40px;
+  color: #ffffff;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #A67B5B;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #A67B5B;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8b6345;
+}
