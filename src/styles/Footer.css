@@ -77,6 +77,7 @@
 .footer-message h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: var(--white);
 }
 .footer-message input,
 .footer-message textarea {
