@@ -8,6 +8,11 @@ import prj4 from "../assets/379WH.png";
 import prj5 from "../assets/90BH.png";
 import prj6 from "../assets/79BH.png";
 import prj7 from "../assets/HOTEL.jpeg"; // Example image, not used in this compon
+import site1 from '../assets/st1.jpeg';
+import site2 from '../assets/st2.jpeg';
+import site3 from '../assets/st3.jpeg';
+import site4 from '../assets/st4.jpeg';
+
 
 const Projects = () => {
   const projects = [
@@ -76,6 +81,20 @@ const Projects = () => {
           </div>
         </div>
       </section>
+
+      <section className="site-gallery section-padding">
+  <div className="container">
+    <h2 className="section-title">SITE VIEW GALLERY</h2>
+    <div className="gallery-wrapper">
+      {[site1, site2, site3, site4].map((image, idx) => (
+        <div className="gallery-item" key={idx}>
+          <img src={image} alt={`Site View ${idx + 1}`} loading="lazy" />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section className="project-stats section-padding bg-light">
         <div className="container">
