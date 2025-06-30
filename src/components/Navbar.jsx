@@ -20,8 +20,8 @@ const Navbar = () => {
         <Link to="/" className="navbar-brand" onClick={handleNavClick}>
           <img src={logo} alt="Aholiab Trading Logo" className="brand-logo" />
           <div className="brand-text">
-            <span className="logo-first">AHOLIAB</span>
-            <span className="logo-second">TRADING (Pty) Ltd</span>
+            <span className="logo-first">AHOLIAB TRADING</span>
+            <span className="logo-second">(Pty) Ltd</span>
           </div>
         </Link>
 
